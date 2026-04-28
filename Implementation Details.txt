@@ -1,0 +1,33 @@
+Project Title: Graph-Based Text Mining for Research Paper Classification
+1. Introduction
+In this project, we develop an intelligent text mining application designed to classify research papers from the Cora dataset. Unlike traditional text classifiers that only look at words, our model leverages Graph Neural Networks (GNN) to capture the citation relationships between papers, leading to higher accuracy in predicting the research field.
+
+2. Dataset Description
+We utilized the Cora dataset, which consists of:
+
+Nodes (x.csv): 2,708 research papers, each represented by a 1,433-dimension word vector.
+
+Edges (edge_index.csv): 10,556 citation links between papers.
+
+Labels (y_train, y_val, y_test): 7 distinct categories (e.g., Neural Networks, Rule Learning, Reinforcement Learning, etc.).
+
+3. Methodology (The Core Tech)
+To meet the course requirements, we implemented the following:
+
+Feature Engineering: Bag-of-words representation for text data.
+
+Link Analysis: Using the citation graph to inform the deep learning model.
+
+Model Architecture: A Graph Convolutional Network (GCN). This model works by "aggregating" information from a paper's neighbors (the papers it cites or is cited by) to better understand its context.
+
+Dimensionality Reduction: Processing the 1,433 features to extract the most relevant patterns.
+
+4. System Architecture (Visual Representation)
+5. Tools & Libraries
+Python: The core programming language.
+
+Pandas & NumPy: For data manipulation and loading CSV files.
+
+PyTorch / PyTorch Geometric: For building and training the Deep Neural Network.
+
+NetworkX: For graph structure visualization.
