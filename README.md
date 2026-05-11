@@ -2,8 +2,6 @@
 
 ## 👩‍💻 Authors
 - Toqa Al-Zoubi  
-- Shaden Alshobake  
-- Ghaida Breitem  
 
 ## 👨‍🏫 Supervisor
 Prof. Abdelwadood Mesleh  
